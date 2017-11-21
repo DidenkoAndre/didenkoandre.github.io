@@ -38,7 +38,8 @@
 							'images/bg03.jpg': 'center',
 							'images/bg04.jpg': 'center',
 							'images/bg05.jpg': 'center',
-							'images/bg06.jpg': 'center'
+							'images/bg06.jpg': 'center',
+							'images/bg07.jpg': 'center'
 						},
 
 					// Delay.
