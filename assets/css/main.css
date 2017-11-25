@@ -7,56 +7,6 @@ body:not(.fr) :lang(fr) {
     display: none; 
 }
 
-.languagepicker {
-	background-color: #FFF;
-	display: inline-block;
-	padding: 0;
-	height: 40px;
-	transition: all .3s ease;
-	margin: 0 50px 10px 0;
-	vertical-align: bottom;
-	float: left;
-	position: fixed
-}
-
-.languagepicker:hover {
-	/* don't forget the 1px border */
-	height: 81px;
-}
-
-.languagepicker a{
-	color: #000;
-	text-decoration: none;
-}
-
-.languagepicker li {
-	display: block;
-	padding: 0px 20px;
-	line-height: 40px;
-	border-top: 1px solid #EEE;
-}
-
-.languagepicker li:hover{
-	background-color: #EEE;
-}
-
-.languagepicker li img {
-	margin-right: 5px;
-}
-
-.roundborders {
-	border-radius: 5px;
-}
-
-.large:hover {
-	/* 
-	don't forget the 1px border!
-	The first language is 40px heigh, 
-	the others are 41px
-	*/
-	height: 245px;
-}
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -854,27 +804,29 @@ body:not(.fr) :lang(fr) {
 /* Footer */
 
 	#footermain {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
 		bottom: 0;
 		cursor: default;
-		height: 6em;
+		height: 3.5em;
 		left: 0;
-		line-height: 8em;
 		position: absolute;
 		text-align: center;
 		width: 100%;
 	}
 
+
 		#footer {
-		bottom: 175px;
+		bottom: 200px;
 		cursor: default;
 		height: 0em;
 		left: 25px;
 		position: absolute;
 		text-align: left;
+		max-width: 80%;
+		width: 20em;
 	}
 
 	/* Menu */
@@ -909,14 +861,14 @@ body:not(.fr) :lang(fr) {
 
 			#menu ul > li {
 				border-top: solid 1px rgba(0, 0, 0, 0.125);
-				margin: 0.5em 0 0 0;
-				padding: 0.5em 0 0 0;
+				margin: 0em 0 0em 0;
+				padding: 0.5em 0em 0.5em 0em;
 			}
 
 				#menu ul > li:first-child {
 					border-top: 0 !important;
 					margin-top: 0 !important;
-					padding-top: 0 !important;
+					padding-top: 0.5em !important;
 				}
 
 				#menu ul > li > a {
@@ -928,6 +880,8 @@ body:not(.fr) :lang(fr) {
 					outline: 0;
 					text-decoration: none;
 					text-transform: uppercase;
+					text-indent: 0.8em;
+					/*text-align: center;*/
 				}
 
 					@media screen and (max-width: 736px) {
@@ -937,6 +891,11 @@ body:not(.fr) :lang(fr) {
 						}
 
 					}
+
+				#menu ul > li:hover{
+					background-color: rgba(0, 0, 0, 0.125);
+				}
+
 
 		#menu .close {
 			background-image: url("images/close.svg");
