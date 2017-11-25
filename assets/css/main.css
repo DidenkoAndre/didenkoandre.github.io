@@ -799,8 +799,6 @@ body:not(.fr) :lang(fr) {
 					display: none;
 				}
 
-
-
 /* Footer */
 
 	#footermain {
@@ -808,26 +806,26 @@ body:not(.fr) :lang(fr) {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);*/
-		bottom: 0;
 		cursor: default;
 		height: 3.5em;
 		left: 0;
-		position: absolute;
+		position: fixed;
 		text-align: center;
 		width: 100%;
 	}
 
 
 		#footer {
-		bottom: 200px;
 		cursor: default;
-		height: 0em;
 		left: 25px;
-		position: absolute;
+		position: fixed;
+		bottom: 0;
 		text-align: left;
 		max-width: 80%;
 		width: 20em;
-	}
+	    overflow:hidden;
+	    height: 210px;
+		}
 
 	/* Menu */
 
@@ -1142,7 +1140,12 @@ body:not(.fr) :lang(fr) {
 	#bg {
 		background-size: 1000px auto;
 		width: 1250px;
-	} }
+	} 
+
+	#footer {
+		height: 250px;
+	}
+}
 
 /* Normal */
 
@@ -1224,7 +1227,12 @@ body:not(.fr) :lang(fr) {
 	#bg {
 		background-size: 750px auto;
 		width: 1000px;
-	} }
+	} 
+
+	#footer {
+		height: 200px;
+	}
+}
 
 /* Mobile */
 
@@ -1332,9 +1340,13 @@ body:not(.fr) :lang(fr) {
 
 		#header nav a:active {
 			font-size: 1em;
-		} }
+		} 
 
 */
+	#footer {
+		height: 190px;
+	}
+}
 
 /* Mobile (Portrait) */
 
@@ -1418,6 +1430,10 @@ body:not(.fr) :lang(fr) {
 	#bg {
 		background-size: 200px auto;
 		width: 600px;
+	}
+
+	#footer {
+		height: 170px;
 	}
 	/* Header (SPECIAL FOR PORTRAIT MOBILE)
 
