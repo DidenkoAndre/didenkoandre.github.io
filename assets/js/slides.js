@@ -33,16 +33,20 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center',
-							'images/bg04.jpg': 'center',
-							'images/bg05.jpg': 'center',
-							'images/bg06.jpg': 'center',
-							'images/bg07.jpg': 'center',
-							'images/bg08.jpg': 'center',
-							'images/bg09.jpg': 'center',
-							'images/bg10.jpg': 'center',
+							'images/bg01.jpg' : '1280px 960px',
+							'images/bg02.jpg' : '960px 1280px',							
+							'images/bg03.jpg' : '960px 1280px',
+							'images/bg04.jpg' : '1280px 960px',
+							'images/bg05.jpg' : '960px 1280px',
+							'images/bg06.jpg' : '960px 1280px',
+							'images/bg07.jpg' : '960px 1280px',
+							'images/bg08.jpg' : '960px 1280px',
+							'images/bg09.jpg' : '960px 1280px',
+							'images/bg10.jpg' : '2048px 1536px',
+							'images/bg11.jpg' : '960px 1280px',
+							'images/bg12.jpg' : '960px 1280px',
+							'images/bg13.jpg' : '960px 1280px',
+							'images/bg14.jpg' : '960px 1280px',
 						},
 
 					// Delay.
@@ -65,7 +69,8 @@
 					// Create BG.
 						$bg = document.createElement('div');
 							$bg.style.backgroundImage = 'url("' + k + '")';
-							$bg.style.backgroundPosition = settings.images[k];
+							$bg.style.backgroundPosition = 'center';
+							///$bg.style.backgroundSize = settings.images[k];
 							$wrapper.appendChild($bg);
 
 					// Add it to array.
