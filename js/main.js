@@ -1,6 +1,51 @@
 (function($) {
 	"use strict";
 
+	$(window).on('load', function() {
+	    $(".preloader").fadeOut("slow", function() {
+	        $(".preloader-left").addClass("slide-left");
+	    });
+
+	    $('#lionhero').owlCarousel({
+	        animateOut: 'fadeOut',
+	        nav: true,
+	        navText: [
+	            '<i class="ion-ios-arrow-thin-left"></i>',
+	            '<i class="ion-ios-arrow-thin-right"></i>'
+	        ],
+	        items: 1,
+	        navSpeed: 400,
+	        loop: true,
+	        autoplay: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: true,
+	    });
+
+	    $('#liontextslider').owlCarousel({
+	        nav: false,
+	        items: 1,
+	        navSpeed: 400,
+	        loop: true,
+	        autoplay: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: true,
+	    });
+
+	    $('#liontestimonial').owlCarousel({
+	        nav: true,
+	        navText: [
+	            '<i class="ion-ios-arrow-thin-left"></i>',
+	            '<i class="ion-ios-arrow-thin-right"></i>'
+	        ],
+	        items: 1,
+	        navSpeed: 400,
+	        loop: true,
+	        autoplay: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: true,
+	    });
+	});
+
 	$('.portfolio-block, .menu-item').on('click', function() {
 
 	    //Portfolio masonry
@@ -66,7 +111,6 @@
 	    $('.menu-blocks').addClass('hidex');
 	    $('.inline-menu-container').addClass('showx');
 	    $('.inline-menu-container.style2').addClass('dark');
-	    $(".sidebar-menu").css('background', 'transparent');
 	});
 	//On Click Open About/Resume Block
 	$('.about-block, .menu-item.about').on('click', function() {
@@ -74,7 +118,6 @@
 	    $('.content-blocks.about').addClass('showx');
 	    $('.menu-item').removeClass('active');
 	    $('.menu-item.about').addClass('active');
-	    $(".sidebar-menu").css('background', '#000');
 	});
 	//On Click Open Portfolio Block
 	$('.portfolio-block, .menu-item.portfolio').on('click', function() {
@@ -82,7 +125,6 @@
 	    $('.content-blocks.portfolio').addClass('showx');
 	    $('.menu-item').removeClass('active');
 	    $('.menu-item.portfolio').addClass('active');
-	    $(".sidebar-menu").css('background', '#000');
 	});
 	//On Click Open Blog Block
 	$('.blog-block, .menu-item.blog').on('click', function() {
@@ -90,7 +132,6 @@
 	    $('.content-blocks.blog').addClass('showx');
 	    $('.menu-item').removeClass('active');
 	    $('.menu-item.blog').addClass('active');
-	    $(".sidebar-menu").css('background', '#000');
 	});
 	//On Click Open Contact Block
 	$('.contact-block, .menu-item.contact').on('click', function() {
@@ -98,7 +139,6 @@
 	    $('.content-blocks.contact').addClass('showx');
 	    $('.menu-item').removeClass('active');
 	    $('.menu-item.contact').addClass('active');
-	    $(".sidebar-menu").css('background', '#000');
 	});
 
 	//On Click Close Blocks

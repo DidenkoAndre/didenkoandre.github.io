@@ -1010,63 +1010,6 @@ cite:before {
     transition: color .25s cubic-bezier(0.77, 0, 0.175, 1)
 }
 
-.pace {
-    display: none;
-    -webkit-pointer-events: none;
-    pointer-events: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    background: #000;
-    position: fixed;
-    z-index: 1998;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center
-}
-
-.pace:before {
-    color: #fff;
-    content: 'Hi, I am Didenko André !';
-    font-size: 100px;
-    display: block;
-    width: 500px;
-    height: 500px;
-    max-height: 100%;
-    -moz-transform: scale(.5, .5);
-    -ms-transform: scale(.5, .5);
-    -webkit-transform: scale(.5, .5);
-    transform: scale(.5, .5)
-}
-
-@media only screen and (min-width: 641px) {
-    .pace:before {
-        -moz-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-        -webkit-transform: scale(1, 1);
-        transform: scale(1, 1)
-    }
-}
-
-.thb-preload .pace {
-    display: flex
-}
-
-.pace.pace-active {
-    z-index: 1999
-}
-
-.pace .pace-progress {
-    background: #9678B6;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    right: 100%;
-    width: 100%;
-    height: 10px
-}
 
 .swiper-container {
     margin: 0 auto;
