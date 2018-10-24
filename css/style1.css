@@ -686,6 +686,13 @@ a,
     align-items: center
 }
 
+.page-padding {
+    min-height: 100vh;
+    padding: 50px 0;
+    width: 100%
+    top: 5%;
+}
+
 @media only screen and (min-width: 641px) {
     .page-padding {
         padding: 80px 0
@@ -1265,4 +1272,8 @@ a:not(:hover):not(.btn):not(.button),
 
 label {
     color: #fff
+}
+
+.page-padding.flex {
+    display: flex
 }
