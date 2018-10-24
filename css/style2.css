@@ -7,7 +7,7 @@
 body {
     color: #727272;
     font-size: 16px;
-    overflow-x: initial;
+    overflow-x: visible;
 }
 
 a {
