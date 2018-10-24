@@ -688,7 +688,8 @@ a,
 
 .page-padding {
     min-height: 100vh;
-    padding: 120px 0;
+    padding: 50px 0;
+    margin-bottom: -50px;
     width: 100%
 }
 
