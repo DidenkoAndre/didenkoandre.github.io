@@ -688,21 +688,8 @@ a,
 
 .page-padding {
     min-height: 100vh;
-    padding: 80px 0;
+    padding: 120px 0;
     width: 100%
-    top: 5%;
-}
-
-@media only screen and (min-width: 641px) {
-    .page-padding {
-        padding: 100px 0
-    }
-}
-
-@media only screen and (min-width: 1361px) {
-    .page-padding {
-        padding: 120px 0
-    }
 }
 
 .page-padding.max {
