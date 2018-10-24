@@ -10594,7 +10594,7 @@ var Froogaloop = function() {
                             b.history.paths = b.history.getPathValues(), b.history.scrollToSlide(b.params.speed, b.history.paths.value, !1)
                         },
                         getPathValues: function() {
-                            var e = window.location.pathname.slice(1).split("http://twofold.fuelthemes.net/"),
+                            var e = window.location.pathname.slice(1).split(""),
                                 t = e.length;
                             return {
                                 key: e[t - 2],
