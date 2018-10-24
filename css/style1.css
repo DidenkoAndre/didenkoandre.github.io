@@ -1,28 +1,8 @@
 @charset "utf-8";
 
-.quick-transition,
-a,
-.swiper-container .text-container,
-.swiper-container h1,
-.swiper-container p,
-#footer .left-side .footer-menu li+li:before {
-    -moz-transition: all .25s cubic-bezier(0.77, 0, 0.175, 1);
-    -o-transition: all .25s cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transition: all .25s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: all .25s cubic-bezier(0.77, 0, 0.175, 1)
-}
-
-.social {
-    vertical-align: middle;
-    -moz-transition: color .25s cubic-bezier(0.77, 0, 0.175, 1), background .25s cubic-bezier(0.77, 0, 0.175, 1), border .25s cubic-bezier(0.77, 0, 0.175, 1);
-    -o-transition: color .25s cubic-bezier(0.77, 0, 0.175, 1), background .25s cubic-bezier(0.77, 0, 0.175, 1), border .25s cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transition: color .25s cubic-bezier(0.77, 0, 0.175, 1), background .25s cubic-bezier(0.77, 0, 0.175, 1), border .25s cubic-bezier(0.77, 0, 0.175, 1);
-    transition: color .25s cubic-bezier(0.77, 0, 0.175, 1), background .25s cubic-bezier(0.77, 0, 0.175, 1), border .25s cubic-bezier(0.77, 0, 0.175, 1)
-}
-
-.social:hover {
-    vertical-align: middle;
-    color: #9678B6
+body {
+    padding: 0;
+    margin: 0;
 }
 
 .swiper-container.center-slide .swiper-slide {
@@ -44,27 +24,6 @@ a,
     min-height: 100vh;
     padding: 120px 0;
     width: 100%
-}
-
-.page-padding.max {
-    max-height: 100vh
-}
-
-.page-padding.collection-style4 {
-    min-height: 0;
-    height: 100vh
-}
-
-
-html.overflow-off {
-    overflow: hidden;
-    height: 100%
-}
-
-#wrapper {
-    min-height: 100vh;
-    flex-direction: column;
-    overflow: hidden
 }
 
 .swiper-container {
@@ -170,10 +129,6 @@ html.overflow-off {
 .swiper-container p {
     color: #151515;
     margin: 0
-}
-
-.swiper-container .btn {
-    margin-top: 40px
 }
 
 .swiper-container .text-container p {
