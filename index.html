@@ -1,57 +1,34 @@
 <!doctype html>
-<html lang="en-US">
-
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
 </head>
 <style type="text/css">
 body {
-    padding: 0;
     margin: 0;
     overflow-x: visible;
-    color: #fff;
-    font-size: 76px;
 }
 
-.swiper-wrapper {
-    position: relative;
-    width: 100%;
+.container {
+    height: 100vh;
+}
+
+.wrapper {
     height: 100%;
     display: flex;
 }
 
-.swiper-container {
-    height: 100vh;
-    direction: ltr
-}
-
-.swiper-slide {
+.slide {
     width: 100%;
-    height: 100%;
-    position: relative;
-    min-height: 100vh;
-    padding: 120px 0;
-
-    text-align: center;
-    background: transparent;
     background-position: center center;
     background-size: cover;
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    min-height: 0;
-    height: auto
 }
 
 </style>
 <body>     
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide" style="background-image:url(./images/bg01.jpg)" >
-                Love                                            
+<div class="container">
+    <div class="wrapper">
+        <div class="slide" style="background-image:url(./images/bg01.jpg)" >              
         </div>
     </div>
 </div>     
