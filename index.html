@@ -4,18 +4,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
-
-<link rel='stylesheet' href='css/style1.css' type='text/css' media='all' />
-<link rel="stylesheet" href="css/style2.css" type="text/css" media="all" />
 </head>
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: visible;
+    color: #fff;
+    font-size: 76px;
+}
 
+.swiper-container.center-slide .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.page-padding {
+    min-height: 100vh;
+    padding: 120px 0;
+    width: 100%
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-container {
+    height: 100vh;
+    direction: ltr
+}
+
+.swiper-container .swiper-slide {
+    text-align: center;
+    background: transparent;
+    background-position: center center;
+    background-size: cover;
+    position: relative
+}
+
+.swiper-container.bottom-slide .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 0;
+    height: auto
+}
+
+</style>
 <body>     
-<div class="swiper-container swiper-gallery bottom-slide" data-autoplay="on" data-autoplay-speed="5000">
+<div class="swiper-container swiper-gallery bottom-slide">
     <div class="swiper-wrapper">
         <div class="swiper-slide page-padding" style="background-image:url(./images/bg01.jpg)" >
-            <div style="font-size: 146px; color: #fff;">
                 Love                                            
-            </div>
         </div>
     </div>
 </div>     
