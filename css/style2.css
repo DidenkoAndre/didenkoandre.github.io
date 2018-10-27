@@ -196,7 +196,7 @@ a:not([href]):not([tabindex]) {
 .btn-download:before {
     position: absolute;
     content: "\f019";
-    font-family: FontAwesome;
+    font-family: "Font Awesome 5 Free";
     top: 8px;
     right: 12px;
     font-size: 24px;
@@ -204,8 +204,8 @@ a:not([href]):not([tabindex]) {
 
 .blog .btn-download:before {
     position: absolute;
-    content: "\f14c ";
-    font-family: FontAwesome;
+    content: "\f360";
+    font-family: "Font Awesome 5 Free";
     top: 8px;
     right: 12px;
     font-size: 24px;
@@ -392,11 +392,6 @@ a:not([href]):not([tabindex]) {
     width: 100%;
 }
 
-.menu4 .content-blocks {
-    width: 80%;
-    left: 20%;
-}
-
 .content {
     position: relative;
     padding: 120px 70px 30px;
@@ -414,10 +409,6 @@ a:not([href]):not([tabindex]) {
 .content-blocks.pop.showx {
     left: 30%;
     opacity: 1;
-}
-
-.menu4 .content-blocks.pop.showx {
-    left: 20%;
 }
 
 .content-blocks.pop .content {
@@ -670,21 +661,9 @@ a:not([href]):not([tabindex]) {
     .menu-block:hover {
         background: rgba(0, 0, 0, 0);
     }
-    .menu4 .content-blocks,
     .content-blocks {
         width: 100%;
         left: 0;
-    }
-     .menu4 .content-blocks.pop {
-        left: 100%;
-    }
-    .menu4 .content-blocks.pop.showx,
-    .content-blocks.pop.showx {
-        left: 0;
-    }
-    .menu4 {
-        right: 0;
-        width: 100%;
     }
     .inline-menu-container {
         width: 100%;
@@ -705,18 +684,12 @@ a:not([href]):not([tabindex]) {
     .content-blocks.pop.showx {
         height: 100vh;
     }
-    .menu4 .name-block.reverse {
-        padding-left: 0;
-    }
 }
 
 
 @media (max-width:375px) {
     .home {
         position: relative;
-    }
-    .menu4 .home {
-        height: 100vh;
     }
 }
 
@@ -726,8 +699,5 @@ a:not([href]):not([tabindex]) {
     }
     .inline-menu li {
         padding: 0 8px;
-    }
-    .menu4 .inline-menu li {
-        padding: 0 5px;
     }
 }
